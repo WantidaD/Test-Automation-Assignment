@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2025-12-24T23:36:40.208632" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/wantidadechtawee/Documents/Automation-Testing/PW-APITEST-APP/tests">
+<suite id="s1-s1" name="Todo" source="/Users/wantidadechtawee/Documents/Automation-Testing/PW-APITEST-APP/tests/todo.robot">
+<test id="s1-s1-t1" name="TC_01 Dummy Test" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-24T23:36:40.226596" level="INFO">Hello Robot Framework</msg>
+<arg>Hello Robot Framework</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-24T23:36:40.226471" elapsed="0.000155"/>
+</kw>
+<status status="PASS" start="2025-12-24T23:36:40.226162" elapsed="0.000532"/>
+</test>
+<status status="PASS" start="2025-12-24T23:36:40.225685" elapsed="0.001154"/>
+</suite>
+<status status="PASS" start="2025-12-24T23:36:40.209246" elapsed="0.017757"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Todo" id="s1-s1" pass="1" fail="0" skip="0">Tests.Todo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
