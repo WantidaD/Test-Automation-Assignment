@@ -24,12 +24,13 @@ TC_02 Delete Todo Successfully
 
 *** Keywords ***
 Open Todo App
-    Open Application    ${REMOTE_URL}
-    ...    platformName=Android
-    ...    deviceName=${DEVICE_NAME}
+    Open Application    http://127.0.0.1:4723
+    ...   platformName=Android
+    ...    deviceName=emulator-5554
     ...    automationName=UiAutomator2
-    ...    appPackage=${APP_PACKAGE}
-    ...    appActivity=${APP_ACTIVITY}
+    ...    app=/Users/wantidadechtawee/Projects/Minimal-Todo/app/build/outputs/apk/debug/app-debug.apk
+    ...    appPackage=com.avjinder.todo
+    ...    appActivity=.MainActivity
     ...    autoGrantPermissions=true
     Set Appium Timeout    10s
 
