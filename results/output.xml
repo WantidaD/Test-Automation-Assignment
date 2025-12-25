@@ -1,31 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2025-12-24T23:36:40.208632" rpa="false" schemaversion="5">
-<suite id="s1" name="Tests" source="/Users/wantidadechtawee/Documents/Automation-Testing/PW-APITEST-APP/tests">
-<suite id="s1-s1" name="Todo" source="/Users/wantidadechtawee/Documents/Automation-Testing/PW-APITEST-APP/tests/todo.robot">
-<test id="s1-s1-t1" name="TC_01 Dummy Test" line="5">
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-24T23:36:40.226596" level="INFO">Hello Robot Framework</msg>
-<arg>Hello Robot Framework</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-24T23:36:40.226471" elapsed="0.000155"/>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2025-12-25T11:34:24.292529" rpa="false" schemaversion="5">
+<suite id="s1" name="Todo" source="/Users/wantidadechtawee/Documents/Automation-Testing/PW-APITEST-APP/tests/todo.robot">
+<kw name="Open Todo App" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-12-25T11:34:24.396976" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused")': /session</msg>
+<msg time="2025-12-25T11:34:24.397231" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused")': /session</msg>
+<msg time="2025-12-25T11:34:24.397399" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused")': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-25T11:34:24.397678" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-25T11:34:24.397589" elapsed="0.005685">No application is open</status>
 </kw>
-<status status="PASS" start="2025-12-24T23:36:40.226162" elapsed="0.000532"/>
+<msg time="2025-12-25T11:34:24.404465" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-25T11:34:24.404588" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused"))</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-12-25T11:34:24.394945" elapsed="0.011632">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused"))</status>
+</kw>
+<kw name="Set Appium Timeout" owner="AppiumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout in ``seconds`` used by various keywords.</doc>
+<status status="NOT RUN" start="2025-12-25T11:34:24.406717" elapsed="0.000016"/>
+</kw>
+<status status="FAIL" start="2025-12-25T11:34:24.394693" elapsed="0.012151">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused"))</status>
+</kw>
+<test id="s1-t1" name="TC_01 Add Todo Successfully" line="14">
+<doc>Verify user can add a new todo</doc>
+<status status="FAIL" start="2025-12-25T11:34:24.406903" elapsed="0.000194">Parent suite setup failed:
+MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused"))</status>
 </test>
-<status status="PASS" start="2025-12-24T23:36:40.225685" elapsed="0.001154"/>
-</suite>
-<status status="PASS" start="2025-12-24T23:36:40.209246" elapsed="0.017757"/>
+<test id="s1-t2" name="TC_02 Delete Todo Successfully" line="19">
+<doc>Verify user can delete existing todo</doc>
+<status status="FAIL" start="2025-12-25T11:34:24.407186" elapsed="0.000125">Parent suite setup failed:
+MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused"))</status>
+</test>
+<kw name="Close Todo App" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-25T11:34:24.407809" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-25T11:34:24.407747" elapsed="0.000391">No application is open</status>
+</kw>
+<msg time="2025-12-25T11:34:24.408464" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-25T11:34:24.408514" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-12-25T11:34:24.407673" elapsed="0.001031">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-12-25T11:34:24.407583" elapsed="0.001167">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-12-25T11:34:24.293489" elapsed="0.115288">Suite setup failed:
+MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused"))
+
+Also suite teardown failed:
+No application is open</status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
-<stat name="Todo" id="s1-s1" pass="1" fail="0" skip="0">Tests.Todo</stat>
+<stat name="Todo" id="s1" pass="0" fail="2" skip="0">Todo</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-12-25T11:34:24.396976" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused")': /session</msg>
+<msg time="2025-12-25T11:34:24.397231" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused")': /session</msg>
+<msg time="2025-12-25T11:34:24.397399" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [Errno 61] Connection refused")': /session</msg>
+<msg time="2025-12-25T11:34:24.404465" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-25T11:34:24.408464" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>

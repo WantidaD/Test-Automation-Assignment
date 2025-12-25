@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2025-12-25T11:40:10.667862" rpa="false" schemaversion="5">
+<suite id="s1" name="Todo" source="/Users/wantidadechtawee/Documents/Automation-Testing/PW-APITEST-APP/tests/todo.robot">
+<kw name="Open Todo App" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-25T11:40:12.434496" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-25T11:40:12.434343" elapsed="0.003056">No application is open</status>
+</kw>
+<msg time="2025-12-25T11:40:12.437792" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-25T11:40:12.437883" level="FAIL">WebDriverException: Message: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+Stacktrace:
+UnknownError: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at getResponseForW3CError (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.ts:486:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:789:9)</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-12-25T11:40:10.772016" elapsed="1.666482">WebDriverException: Message: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+Stacktrace:
+UnknownError: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at getResponseForW3CError (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.ts:486:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:789:9)</status>
+</kw>
+<kw name="Set Appium Timeout" owner="AppiumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout in ``seconds`` used by various keywords.</doc>
+<status status="NOT RUN" start="2025-12-25T11:40:12.438580" elapsed="0.000011"/>
+</kw>
+<status status="FAIL" start="2025-12-25T11:40:10.771773" elapsed="1.666874">WebDriverException: Message: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+Stacktrace:
+UnknownError: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at getResponseForW3CError (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.ts:486:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:789:9)</status>
+</kw>
+<test id="s1-t1" name="TC_01 Add Todo Successfully" line="14">
+<doc>Verify user can add a new todo</doc>
+<status status="FAIL" start="2025-12-25T11:40:12.438687" elapsed="0.000164">Parent suite setup failed:
+WebDriverException: Message: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+Stacktrace:
+UnknownError: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at getResponseForW3CError (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.ts:486:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:789:9)</status>
+</test>
+<test id="s1-t2" name="TC_02 Delete Todo Successfully" line="19">
+<doc>Verify user can delete existing todo</doc>
+<status status="FAIL" start="2025-12-25T11:40:12.438952" elapsed="0.000118">Parent suite setup failed:
+WebDriverException: Message: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+Stacktrace:
+UnknownError: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at getResponseForW3CError (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.ts:486:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:789:9)</status>
+</test>
+<kw name="Close Todo App" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-25T11:40:12.439512" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-25T11:40:12.439449" elapsed="0.000414">No application is open</status>
+</kw>
+<msg time="2025-12-25T11:40:12.440203" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-25T11:40:12.440254" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-12-25T11:40:12.439386" elapsed="0.001054">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-12-25T11:40:12.439310" elapsed="0.001176">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-12-25T11:40:10.668511" elapsed="1.772000">Suite setup failed:
+WebDriverException: Message: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+Stacktrace:
+UnknownError: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at getResponseForW3CError (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.ts:1103:34)
+    at asyncHandler (/Users/wantidadechtawee/.nvm/versions/node/v22.17.1/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.ts:507:57)
+The above error is caused by
+Error: Either provide 'app' option to install 'com.avjinder.todo' or consider setting 'noReset' to 'true' if 'com.avjinder.todo' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.ts:486:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/wantidadechtawee/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:789:9)
+
+Also suite teardown failed:
+No application is open</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Todo" id="s1" pass="0" fail="2" skip="0">Todo</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-25T11:40:12.437792" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-25T11:40:12.440203" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
